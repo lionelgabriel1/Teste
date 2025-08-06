@@ -12,7 +12,7 @@ collections:
   - name: "pages"
     label: "Páginas"
     files:
-      - file: "src/data/content.yml"
+      - file: "public/content.yml"
         label: "Página Principal"
         name: "home"
         fields:
