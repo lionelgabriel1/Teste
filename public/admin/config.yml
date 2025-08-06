@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: lionelgabriel1/Teste
+  repo: lionelgabriel1/Teste # substitua pelo seu repositório se for diferente
   branch: main
 
 media_folder: "public/uploads"
