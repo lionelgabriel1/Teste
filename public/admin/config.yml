@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: lionelgabriel1/Teste # substitua pelo seu repositório se for diferente
+  repo: lionelgabriel1/Teste
   branch: main
 
 media_folder: "public/uploads"
@@ -16,45 +16,45 @@ collections:
         label: "Página Principal"
         name: "home"
         fields:
-          - { label: "Link de Afiliação Global", name: "affiliate_link", widget: "string" }
+          - { label: "Link de Afiliação Global", name: "affiliate_link", widget: "string", required: false }
 
           - label: "Recursos Partilhados"
             name: "shared_assets"
             widget: "object"
             fields:
-              - { label: "Imagem da Seta", name: "arrow_image", widget: "image" }
+              - { label: "Imagem da Seta", name: "arrow_image", widget: "image", required: false }
 
           - label: "Secção Herói"
             name: "hero_section"
             widget: "object"
             fields:
-              - { label: "Imagem do Avião", name: "plane_image", widget: "image" }
-              - { label: "Texto do Botão Principal", name: "button_text", widget: "string" }
-              - { label: "ID do Vídeo do YouTube", name: "video_id", widget: "string" }
+              - { label: "Imagem do Avião", name: "plane_image", widget: "image", required: false }
+              - { label: "Texto do Botão Principal", name: "button_text", widget: "string", required: false }
+              - { label: "ID do Vídeo do YouTube", name: "video_id", widget: "string", required: false }
 
           - label: "Secção de Prémios"
             name: "prize_section"
             widget: "object"
             fields:
-              - { label: "Imagem do Prémio", name: "prize_image", widget: "image" }
-              - { label: "Imagem das Estrelas", name: "stars_image", widget: "image" }
+              - { label: "Imagem do Prémio", name: "prize_image", widget: "image", required: false }
+              - { label: "Imagem das Estrelas", name: "stars_image", widget: "image", required: false }
 
           - label: "Secção Clube VIP"
             name: "vip_club_section"
             widget: "object"
             fields:
-              - { label: "Imagem do Clube VIP", name: "vip_image", widget: "image" }
+              - { label: "Imagem do Clube VIP", name: "vip_image", widget: "image", required: false }
 
           - label: "Secção de Registo"
             name: "registration_section"
             widget: "object"
             fields:
-              - { label: "Título", name: "title", widget: "string" }
-              - { label: "Imagem do Formulário", name: "form_image", widget: "image" }
+              - { label: "Título", name: "title", widget: "string", required: false }
+              - { label: "Imagem do Formulário", name: "form_image", widget: "image", required: false }
 
           - label: "Secção Bónus Final"
             name: "final_bonus_section"
             widget: "object"
             fields:
-              - { label: "Imagem do Bónus", name: "bonus_image", widget: "image" }
-              - { label: "Texto do Botão", name: "button_text", widget: "string" }
+              - { label: "Imagem do Bónus", name: "bonus_image", widget: "image", required: false }
+              - { label: "Texto do Botão", name: "button_text", widget: "string", required: false }
