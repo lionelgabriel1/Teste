@@ -10,7 +10,7 @@ if (isDev) {
 	editModeDevPlugin = (await import('./plugins/visual-editor/vite-plugin-edit-mode.js')).default;
 }
 
-const configHorizonsViteErrorHandler = `/* ... */`; // mantém como está
+const configHorizonsViteErrorHandler = `/* ... */`;
 const configHorizonsRuntimeErrorHandler = `/* ... */`;
 const configHorizonsConsoleErrroHandler = `/* ... */`;
 const configWindowFetchMonkeyPatch = `/* ... */`;
@@ -67,7 +67,8 @@ export default defineConfig({
 				'@babel/parser',
 				'@babel/traverse',
 				'@babel/generator',
-				'@babel/types'
+				'@babel/types',
+				'fsevents' // 👈 ADICIONADO AQUI!
 			],
 			output: {
 				manualChunks: {
