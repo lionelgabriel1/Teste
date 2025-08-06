@@ -1,13 +1,12 @@
 backend:
   name: github
-  repo: lionelgabriel1/Teste # substitua caso mude o repositório
+  repo: lionelgabriel1/Teste # substitua se o repositório tiver outro nome
   branch: main
-  auth_scope: repo
-  base_url: https://tiporeisemservico.online
-  site_domain: tiporeisemservico.online
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
+
+site_url: https://tiporeisemservico.online
 
 collections:
   - name: "pages"
@@ -35,6 +34,30 @@ collections:
 
           - label: "Secção de Prémios"
             name: "prize_section"
+            widget: "object"
+            fields:
+              - { label: "Imagem do Prémio", name: "prize_image", widget: "image" }
+              - { label: "Imagem das Estrelas", name: "stars_image", widget: "image" }
+
+          - label: "Secção Clube VIP"
+            name: "vip_club_section"
+            widget: "object"
+            fields:
+              - { label: "Imagem do Clube VIP", name: "vip_image", widget: "image" }
+
+          - label: "Secção de Registo"
+            name: "registration_section"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Imagem do Formulário", name: "form_image", widget: "image" }
+
+          - label: "Secção Bónus Final"
+            name: "final_bonus_section"
+            widget: "object"
+            fields:
+              - { label: "Imagem do Bónus", name: "bonus_image", widget: "image" }
+              - { label: "Texto do Botão", name: "button_text", widget: "string" }            name: "prize_section"
             widget: "object"
             fields:
               - { label: "Imagem do Prémio", name: "prize_image", widget: "image" }
