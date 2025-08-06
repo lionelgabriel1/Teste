@@ -6,22 +6,19 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <!-- 🔥 ESSENCIAL para o CMS funcionar -->
-    <div id="cms"></div>
-
-    <!-- Redireciona o token de convite corretamente -->
+    <!-- Redireciona tokens para /admin/#... -->
     <script>
       const hash = window.location.hash;
-      if (hash.startsWith('#invite_token=')) {
-        const url = '/admin/' + hash;
+      if (hash.startsWith("#invite_token=") || hash.startsWith("#confirmation_token=")) {
+        const url = "/admin/" + hash;
         window.location.replace(url);
       }
     </script>
 
-    <!-- Carrega o CMS -->
+    <!-- Inicia o Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 
-    <!-- Inicia o Netlify Identity -->
+    <!-- Inicia o widget de identidade -->
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {
