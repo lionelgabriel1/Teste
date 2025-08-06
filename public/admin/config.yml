@@ -8,6 +8,8 @@ public_folder: "/Uploads"
 
 site_url: https://tiporeisemservico.online
 
+publish_mode: simple
+
 collections:
   - name: "pages"
     label: "Páginas"
@@ -36,29 +38,6 @@ collections:
           - label: "Secção de Prémios"
             name: "prize_section"
             widget: "object"
-            fields:
-              - { label: "Imagem do Prémio", name: "prize_image", widget: "image", required: false }
-              - { label: "Imagem das Estrelas", name: "stars_image", widget: "image", required: false }
-
-          - label: "Secção Clube VIP"
-            name: "vip_club_section"
-            widget: "object"
-            fields:
-              - { label: "Imagem do Clube VIP", name: "vip_image", widget: "image", required: false }
-
-          - label: "Secção de Registo"
-            name: "registration_section"
-            widget: "object"
-            fields:
-              - { label: "Título", name: "title", widget: "string", required: false }
-              - { label: "Imagem do Formulário", name: "form_image", widget: "image", required: false }
-
-          - label: "Secção Bónus Final"
-            name: "final_bonus_section"
-            widget: "object"
-            fields:
-              - { label: "Imagem do Bónus", name: "bonus_image", widget: "image", required: false }
-              - { label: "Texto do Botão", name: "button_text", widget: "string", required: false }            widget: "object"
             fields:
               - { label: "Imagem do Prémio", name: "prize_image", widget: "image", required: false }
               - { label: "Imagem das Estrelas", name: "stars_image", widget: "image", required: false }
