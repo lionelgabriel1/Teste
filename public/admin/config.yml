@@ -3,8 +3,8 @@ backend:
   repo: lionelgabriel1/Teste
   branch: main
 
-media_folder: "public/uploads"
-public_folder: "/uploads"
+media_folder: "public/Uploads"
+public_folder: "/Uploads"
 
 site_url: https://tiporeisemservico.online
 
