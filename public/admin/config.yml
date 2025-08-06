@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: lionelgabriel1/Teste # substitua se o repositório tiver outro nome
+  repo: lionelgabriel1/Teste
   branch: main
 
 media_folder: "public/uploads"
@@ -35,53 +35,6 @@ collections:
           - label: "Secção de Prémios"
             name: "prize_section"
             widget: "object"
-            fields:
-              - { label: "Imagem do Prémio", name: "prize_image", widget: "image" }
-              - { label: "Imagem das Estrelas", name: "stars_image", widget: "image" }
-
-          - label: "Secção Clube VIP"
-            name: "vip_club_section"
-            widget: "object"
-            fields:
-              - { label: "Imagem do Clube VIP", name: "vip_image", widget: "image" }
-
-          - label: "Secção de Registo"
-            name: "registration_section"
-            widget: "object"
-            fields:
-              - { label: "Título", name: "title", widget: "string" }
-              - { label: "Imagem do Formulário", name: "form_image", widget: "image" }
-
-          - label: "Secção Bónus Final"
-            name: "final_bonus_section"
-            widget: "object"
-            fields:
-              - { label: "Imagem do Bónus", name: "bonus_image", widget: "image" }
-              - { label: "Texto do Botão", name: "button_text", widget: "string" }            name: "prize_section"
-            widget: "object"
-            fields:
-              - { label: "Imagem do Prémio", name: "prize_image", widget: "image" }
-              - { label: "Imagem das Estrelas", name: "stars_image", widget: "image" }
-
-          - label: "Secção Clube VIP"
-            name: "vip_club_section"
-            widget: "object"
-            fields:
-              - { label: "Imagem do Clube VIP", name: "vip_image", widget: "image" }
-
-          - label: "Secção de Registo"
-            name: "registration_section"
-            widget: "object"
-            fields:
-              - { label: "Título", name: "title", widget: "string" }
-              - { label: "Imagem do Formulário", name: "form_image", widget: "image" }
-
-          - label: "Secção Bónus Final"
-            name: "final_bonus_section"
-            widget: "object"
-            fields:
-              - { label: "Imagem do Bónus", name: "bonus_image", widget: "image" }
-              - { label: "Texto do Botão", name: "button_text", widget: "string" }            widget: "object"
             fields:
               - { label: "Imagem do Prémio", name: "prize_image", widget: "image" }
               - { label: "Imagem das Estrelas", name: "stars_image", widget: "image" }
