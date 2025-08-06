@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Toaster } from '@/components/ui/toaster';
@@ -35,6 +34,15 @@ function App() {
         <Toaster />
         <HeroSection onLinkClick={handleLinkClick} content={content.hero_section} sharedContent={content.shared_assets} />
         <PrizeSection onLinkClick={handleLinkClick} content={content.prize_section} sharedContent={content.shared_assets} />
+        <VipClubSection onLinkClick={handleLinkClick} content={content.vip_club_section} sharedContent={content.shared_assets} />
+        <RegistrationSection onLinkClick={handleLinkClick} content={content.registration_section} />
+        <FinalBonusSection onLinkClick={handleLinkClick} content={content.final_bonus_section} />
+      </div>
+    </>
+  );
+}
+
+export default App;        <PrizeSection onLinkClick={handleLinkClick} content={content.prize_section} sharedContent={content.shared_assets} />
         <VipClubSection onLinkClick={handleLinkClick} content={content.vip_club_section} sharedContent={content.shared_assets} />
         <RegistrationSection onLinkClick={handleLinkClick} content={content.registration_section} />
         <FinalBonusSection onLinkClick={handleLinkClick} content={content.final_bonus_section} />
